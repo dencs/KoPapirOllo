@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="kopapirollo.viewController">
+   <children>
+      <ImageView id="imgRockPc" fx:id="imgRockPc" fitHeight="150.0" fitWidth="200.0" layoutX="60.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ko.png" />
+         </image>
+      </ImageView>
+      <ImageView id="imgScissorsPc" fx:id="imgScissorsPc" fitHeight="150.0" fitWidth="200.0" layoutX="60.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ollo.png" />
+         </image>
+      </ImageView>
+      <ImageView id="imgPaperPc" fx:id="imgPaperPc" fitHeight="150.0" fitWidth="200.0" layoutX="60.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="60.0">
+         <image>
+            <Image url="@papir.png" />
+         </image>
+      </ImageView>
+      <ImageView id="imgScissorsPlayer" fx:id="imgScissorsPlayer" fitHeight="150.0" fitWidth="200.0" layoutX="374.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="60.0">
+         <image>
+            <Image url="@ollo.png" />
+         </image>
+      </ImageView>
+      <ImageView id="imgRockPlayer" fx:id="imgRockPlayer" fitHeight="150.0" fitWidth="200.0" layoutX="374.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="60.0">
+         <image>
+            <Image url="@ko.png" />
+         </image>
+      </ImageView>
+      <ImageView id="imgPaperPlayer" fx:id="imgPaperPlayer" fitHeight="150.0" fitWidth="200.0" layoutX="374.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="60.0">
+         <image>
+            <Image url="@papir.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="195.0" layoutY="99.0" prefHeight="43.0" prefWidth="171.0" spacing="30.0">
+         <children>
+            <Button id="btnRock" fx:id="btnRock" mnemonicParsing="false" onAction="#handlerRockButtonClick">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ko.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="btnPaper" fx:id="btnPaper" mnemonicParsing="false" onAction="#handlerPaperButtonClick">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@papir.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button id="btnScissors" fx:id="btnScissors" mnemonicParsing="false" onAction="#handlerScissorsButtonClick">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ollo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </HBox>
+      <Text layoutX="185.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KŐ - PAPÍR - OLLLÓ">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
