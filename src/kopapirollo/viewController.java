@@ -19,6 +19,7 @@ import javafx.scene.image.ImageView;
  */
 public class viewController implements Initializable {
     
+//<editor-fold defaultstate="collapsed" desc="comment">
     @FXML
     private ImageView imgRockPc;
     
@@ -45,6 +46,7 @@ public class viewController implements Initializable {
     
     @FXML
     private Button btnScissors;
+//</editor-fold>
     
     @FXML
     private void handlerScissorsButtonClick(){
