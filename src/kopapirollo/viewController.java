@@ -7,6 +7,7 @@ package kopapirollo;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -63,23 +64,23 @@ public class viewController implements Initializable {
 //</editor-fold>
     //ha az ollóra kattint a játékos...
     @FXML
-    private void handlerScissorsButtonClick(){
+    private void handlerScissorsButtonClick(ActionEvent e){
         change(imgScissorsPlayer);
     }
     //ha az papírra kattinta játékos...
     @FXML
-    private void handlerPaperButtonClick(){
+    private void handlerPaperButtonClick(ActionEvent e){
         change(imgPaperPlayer);
     }
     //ha az kőre kattint a játékos...
     @FXML
-    private void handlerRockButtonClick(){
+    private void handlerRockButtonClick(ActionEvent e){
         change(imgRockPlayer);
     }
     
     //újraindul a játék minden értéket alapra állítok
     @FXML
-    private void handlerRestartButtonClick(){
+    private void handlerRestartButtonClick(ActionEvent e){
         imgRockPlayer.setVisible(false);
         imgScissorsPlayer.setVisible(false);
         imgPaperPlayer.setVisible(false);
