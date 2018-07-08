@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="kopapirollo.viewController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kopapirollo.viewController">
    <children>
       <ImageView id="imgRockPc" fx:id="imgRockPc" fitHeight="150.0" fitWidth="200.0" layoutX="60.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -80,5 +80,26 @@
             <Font size="26.0" />
          </font>
       </Text>
+      <Text layoutX="119.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gép">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="410.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Játékos">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text id="txtPcScore" fx:id="txtPcScore" layoutX="119.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text id="txtPayerScore" fx:id="txtPayerScore" layoutX="410.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Button layoutX="258.0" layoutY="185.0" mnemonicParsing="false" onAction="#handlerRestartButtonClick" text="Újat kezdek" />
    </children>
 </AnchorPane>
