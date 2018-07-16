@@ -80,7 +80,7 @@ public class viewController implements Initializable {
     
     //újraindul a játék minden értéket alapra állítok
     @FXML
-    private void handlerRestartButtonClick(ActionEvent e){
+    private void handlerRestartButtonClick(ActionEvent e ){
         imgRockPlayer.setVisible(false);
         imgScissorsPlayer.setVisible(false);
         imgPaperPlayer.setVisible(false);
