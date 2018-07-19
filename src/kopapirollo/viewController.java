@@ -126,7 +126,7 @@ public class viewController implements Initializable {
                     toolPc = imgScissorsPc.getId();
             break;
         }
-        //System.out.println(toolPc + " - " + toolPlayer);
+        //System.out.println(toolPc + " - " + toolPlayer );
         
         //aki nyer annak a pontszámát felplusszolom és beleteszem a megfelelő text mezőbe
         if ((toolPc.equals("imgScissorsPc") && toolPlayer.equals("imgPaperPlayer"))
